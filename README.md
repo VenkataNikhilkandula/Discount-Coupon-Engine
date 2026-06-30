@@ -156,11 +156,11 @@ http://localhost:8081/api/checkout
 {
   "userId": 1,
   "couponCodes": [
-    "WELCOME10",
+    "NIKKI10",
     "FLAT100"
   ],
   "originalAmount": 2500,
-  "category": "ELECTRONICS"
+  "category": "MOBILES"
 }
 ```
 
@@ -176,11 +176,11 @@ http://localhost:8081/api/checkout
   "finalAmount": 2150,
   "appliedDiscounts": [
     {
-      "couponCode": "WELCOME10",
+      "couponCode": "NIKKI10",
       "discountAmount": 250
     },
     {
-      "couponCode": "FLAT100",
+      "couponCode": "DIWALI100",
       "discountAmount": 100
     }
   ]
@@ -278,8 +278,8 @@ Original Amount
 Coupons
 
 ```
-WELCOME10
-FLAT100
+NIKKI10
+DIWALI100
 ```
 
 Total Discount
@@ -358,11 +358,7 @@ curl --location 'http://localhost:8081/api/checkout' \
 --header 'Content-Type: application/json' \
 --data '{
     "userId":1,
-    "couponCodes":["WELCOME10","FLAT100"],
+    "couponCodes":["NIKKI10","DIWALI100"],
     "originalAmount":2500,
-    "category":"ELECTRONICS"
+    "category":"MOBILES"
 }'
-
-
-
-This project is intended for educational and demonstration purposes.
